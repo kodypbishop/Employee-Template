@@ -1,6 +1,4 @@
-function mainTemplate(data){
-
-return    `<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -52,6 +50,7 @@ return    `<!DOCTYPE html>
             margin-right: 5vw;
             box-shadow: 5px 5px 5px gray;
             border-radius: 15px;
+            min-width: 15vw;
             
         }
 
@@ -95,11 +94,81 @@ return    `<!DOCTYPE html>
         <h1>My Team</h1>
     </header>
     <div class="conatainer">
-        ${data}
+        <div class="card">
+    <div class="cardheader">
+        <h2>Kody</h2>
+        <h2><i class="fas fa-mug-hot"></i>Manager</h2>
+    </div>
+    <div class="cardbody">
+        <table>
+            <tr>
+                <td>ID: 1</td>
+            </tr>
+            <tr>
+            <td>Email: <a href="mailto:kodypbishop@gmail.com">kodypbishop@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td>Office Number: 1</td>
+            </tr>
+        </table>
+    </div>
+</div><div class="card">
+    <div class="cardheader">
+        <h2>Other</h2>
+        <h2><i class="fas fa-glasses"></i>Engineer</h2>
+    </div>
+    <div class="cardbody">
+        <table>
+            <tr>
+                <td>ID: 2</td>
+            </tr>
+            <tr>
+                <td>Email: <a href="mailto:other@email.com">other@email.com</a></td>
+            </tr>
+            <tr>
+                <td>School:<a href="https://github.com/kodypbishop"> kodypbishop</a></td>
+            </tr>
+        </table>
+    </div>
+</div><div class="card">
+    <div class="cardheader">
+        <h2>another</h2>
+        <h2><i class="fas fa-user-graduate"></i>Intern</h2>
+    </div>
+    <div class="cardbody">
+        <table>
+            <tr>
+                <td>ID: 3</td>
+            </tr>
+            <tr>
+            <td>Email: <a href="mailto:something.com">something.com</a></td>
+            </tr>
+            <tr>
+                <td>School: U of U</td>
+            </tr>
+        </table>
+    </div>
+</div><div class="card">
+    <div class="cardheader">
+        <h2>Me</h2>
+        <h2><i class="fas fa-user-graduate"></i>Intern</h2>
+    </div>
+    <div class="cardbody">
+        <table>
+            <tr>
+                <td>ID: ?</td>
+            </tr>
+            <tr>
+            <td>Email: <a href="mailto:dfsdfsdfsdf.df">dfsdfsdfsdf.df</a></td>
+            </tr>
+            <tr>
+                <td>School: sfdfsd</td>
+            </tr>
+        </table>
+    </div>
+</div>
     </div>
 
 </body>
 
-</html>`
-}
-module.exports = mainTemplate;
+</html>

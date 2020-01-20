@@ -8,10 +8,10 @@ function internTemplate (data){
     <div class="cardbody">
         <table>
             <tr>
-                <td>ID: ${data.getID()}</td>
+                <td>ID: ${data.getId()}</td>
             </tr>
             <tr>
-                <td>Email: ${data.getEmail()}</td>
+            <td>Email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></td>
             </tr>
             <tr>
                 <td>School: ${data.getSchool()}</td>
