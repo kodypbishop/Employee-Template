@@ -60,22 +60,19 @@ function employees() {
         obj = response
         if (obj.role == "Manager") {
             inquirer.prompt(officeNumber).then(function (response) {
-                obj.officeNumber = response.officeNumber
-                let person = new Manager(obj.name, obj.id, obj.email, obj.officeNumber)
+                let person = new Manager(obj.name, obj.id, obj.email, response.officeNumber)
                 answers.Manager.push(person)
                 repeat();
             })
         } else if (obj.role == "Engineer") {
             inquirer.prompt(github).then(function (response) {
-                obj.GitHubUser = response.GitHubUser
-                let person = new Engineer(obj.name, obj.id, obj.email, obj.GitHubUser)
+                let person = new Engineer(obj.name, obj.id, obj.email, response.GitHubUser)
                 answers.Engineer.push(person)
                 repeat();
             })
         } else {
             inquirer.prompt(school).then(function (response) {
-                obj.school = response.school
-                let person = new Intern(obj.name, obj.id, obj.email, obj.school)
+                let person = new Intern(obj.name, obj.id, obj.email, response.school)
                 answers.Intern.push(person)
                 repeat();
             })
